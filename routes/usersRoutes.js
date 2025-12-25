@@ -13,8 +13,6 @@ getUserRoute.get("/:username/summary", async (req, res) => {
   const userReceipts = [];
 
   for (let i = 0; i < receiptsData.length; i++) {
-    console.log(receiptsData[i].username, username);
-
     if (receiptsData[i].username === username) {
       userReceipts.push(receiptsData[i]);
     }
